@@ -1,0 +1,35 @@
+Determining if files ucontext.h exist failed with the following output:
+Change Dir: /Users/guangzhu/Desktop/ETHz/S5/Advanced Computer Graphics/nori/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_88c6f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88c6f.dir/build.make CMakeFiles/cmTC_88c6f.dir/build
+Building C object CMakeFiles/cmTC_88c6f.dir/ILMBASE_HAVE_UCONTEXT_H.c.o
+/usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_88c6f.dir/ILMBASE_HAVE_UCONTEXT_H.c.o -MF CMakeFiles/cmTC_88c6f.dir/ILMBASE_HAVE_UCONTEXT_H.c.o.d -o CMakeFiles/cmTC_88c6f.dir/ILMBASE_HAVE_UCONTEXT_H.c.o -c "/Users/guangzhu/Desktop/ETHz/S5/Advanced Computer Graphics/nori/build/CMakeFiles/CheckIncludeFiles/ILMBASE_HAVE_UCONTEXT_H.c"
+In file included from /Users/guangzhu/Desktop/ETHz/S5/Advanced Computer Graphics/nori/build/CMakeFiles/CheckIncludeFiles/ILMBASE_HAVE_UCONTEXT_H.c:2:
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/ucontext.h:51:2: error: The deprecated ucontext routines require _XOPEN_SOURCE to be defined
+#error The deprecated ucontext routines require _XOPEN_SOURCE to be defined
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_88c6f.dir/ILMBASE_HAVE_UCONTEXT_H.c.o] Error 1
+make: *** [cmTC_88c6f/fast] Error 2
+
+
+Source:
+/* */
+#include <ucontext.h>
+
+
+int main(void){return 0;}
+
+Performing C++ SOURCE FILE Test SUPPORTS_MRTM failed with the following output:
+Change Dir: /Users/guangzhu/Desktop/ETHz/S5/Advanced Computer Graphics/nori/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4b1b7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4b1b7.dir/build.make CMakeFiles/cmTC_4b1b7.dir/build
+Building CXX object CMakeFiles/cmTC_4b1b7.dir/src.cxx.o
+/usr/bin/clang++ -DSUPPORTS_MRTM  -stdlib=libc++ -D_LIBCPP_VERSION -fvisibility=hidden  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -mrtm -Werror -std=c++11 -MD -MT CMakeFiles/cmTC_4b1b7.dir/src.cxx.o -MF CMakeFiles/cmTC_4b1b7.dir/src.cxx.o.d -o CMakeFiles/cmTC_4b1b7.dir/src.cxx.o -c "/Users/guangzhu/Desktop/ETHz/S5/Advanced Computer Graphics/nori/build/CMakeFiles/CMakeTmp/src.cxx"
+clang: error: argument unused during compilation: '-mrtm' [-Werror,-Wunused-command-line-argument]
+make[1]: *** [CMakeFiles/cmTC_4b1b7.dir/src.cxx.o] Error 1
+make: *** [cmTC_4b1b7/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
